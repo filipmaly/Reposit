@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_get_vallue_button"
+    tools:context="filipmaly.flightnotes.get_vallue_button"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/HeaderGetValue"
+        android:id="@+id/HeaderGet"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameGet"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editNameGet"
+        android:textSize="20dp"
+        android:text="@string/NameGet"
+        android:password="false"
+        android:layout_alignEnd="@+id/CountOfLipo"
+        android:layout_alignTop="@+id/editNameGet" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNameGet"
+        android:layout_below="@+id/HeaderGet"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:enabled="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TypeOfBatt"
+        android:textSize="20dp"
+        android:text="Typ Baterie"
+        android:layout_alignBottom="@+id/TypeSetGet"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/TypeSetGet" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TypeSetGet"
+        android:layout_below="@+id/editNameGet"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:enabled="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CountOfLipo"
+        android:textSize="20dp"
+        android:text="Počet článků"
+        android:layout_alignBottom="@+id/cellNumberGet"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/cellNumberGet" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cellNumberGet"
+        android:layout_below="@+id/TypeSetGet"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:enabled="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CapacityGet"
+        android:textSize="20dp"
+        android:text="Kapacita"
+        android:layout_below="@+id/CountOfLipo"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/capacityGet"
+        android:layout_alignTop="@+id/CapacityGet"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:editable="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ID_Battery_Get"
+        android:textSize="20dp"
+        android:text="ID baterky"
+        android:layout_alignBottom="@+id/editID_get"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editID_get" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editID_get"
+        android:layout_below="@+id/capacityGet"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:hint="true"
+        android:enabled="false"
+        android:editable="false"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LastRequestGet"
+        android:textSize="20dp"
+        android:text="Nabíjeno"
+        android:singleLine="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastGet"
+        android:layout_alignTop="@+id/LastRequestGet"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:editable="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Weather"
+        android:textSize="20dp"
+        android:text="Čas"
+        android:layout_above="@+id/CountOfCycle"
+        android:layout_alignEnd="@+id/CapacityGet"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/timerGet" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/timerGet"
+        android:layout_below="@+id/lastGet"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:editable="true"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Počet cyklů"
+        android:id="@+id/CountOfCycle"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/buttonDELcycle"
+        android:layout_alignEnd="@+id/CountOfLipo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDELcycle"
+        android:height="50dp"
+        android:width="50dp"
+        android:background="@android:drawable/presence_busy"
+        android:onClick="changeCycle"
+        android:layout_below="@+id/timerGet"
+        android:layout_alignStart="@+id/timerGet" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonADDcycle"
+        android:width="50dp"
+        android:height="50dp"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="changeCycle"
+        android:layout_below="@+id/timerGet"
+        android:layout_toStartOf="@+id/TextWievCycle" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/TextWievCycle"
+        android:text="0"
+        android:textAlignment="center"
+        android:enabled="true"
+        android:width="100dp"
+        android:layout_above="@+id/saveactual"
+        android:layout_alignEnd="@+id/saveactual" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nastav aktualni"
+        android:id="@+id/saveactual"
+        android:onClick="changeCycle"
+        android:layout_below="@+id/buttonDELcycle"
+        android:layout_toEndOf="@+id/buttonDELcycle"
+        android:layout_alignStart="@+id/CountOfCycle" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/deleleteBatt"
+        android:onClick="changeCycle"
+        android:background="@android:drawable/ic_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Uložit"
+        android:id="@+id/saveBatt"
+        android:onClick="changeCycle"
+        android:layout_below="@+id/saveactual"
+        android:layout_centerHorizontal="true"
+        android:allowUndo="true" />
+</RelativeLayout>

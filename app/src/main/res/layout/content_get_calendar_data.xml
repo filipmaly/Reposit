@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
+    android:layout_height="1000dp" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_get_calendar_data"
+    tools:context="filipmaly.flightnotes.get_calendar_data"
+    android:fillViewport="true">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Zvolene datum"
+        android:id="@+id/textViewDate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ID"
+        android:id="@+id/getID_calendar"
+        android:layout_below="@+id/textViewDate"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hodina"
+        android:id="@+id/textViewHour"
+        android:layout_below="@+id/getID_calendar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHour"
+        android:layout_alignBottom="@+id/textViewHour"
+        android:layout_alignEnd="@+id/textViewDate"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Počasí"
+        android:id="@+id/textViewTemperature"
+        android:layout_below="@+id/textViewHour"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextWeather"
+        android:layout_alignBottom="@+id/textViewTemperature"
+        android:layout_alignEnd="@+id/editTextHour"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vítr"
+        android:id="@+id/textViewWind"
+        android:layout_below="@+id/textViewTemperature"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextWind"
+        android:layout_alignBottom="@+id/textViewWind"
+        android:layout_alignEnd="@+id/editTextWeather" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Teplota"
+        android:id="@+id/textViewTemp"
+        android:layout_below="@+id/editTextWind"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextTemp"
+        android:layout_alignBottom="@+id/textViewTemp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Model 1"
+        android:id="@+id/textViewmodel1"
+        android:layout_below="@+id/textViewTemp"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnermodel1"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/editTextTemp"
+        android:layout_alignStart="@+id/editTextTemp" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Model 2"
+        android:id="@+id/textViewmodel2"
+        android:layout_below="@+id/textViewmodel1"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnermodel2"
+        android:spinnerMode="dialog"
+        android:nestedScrollingEnabled="false"
+        android:layout_above="@+id/spinnermodel3"
+        android:layout_alignStart="@+id/spinnermodel1" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Model 3"
+        android:id="@+id/textViewmodel3"
+        android:layout_below="@+id/textViewmodel2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinnermodel3" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnermodel3"
+        android:layout_alignBottom="@+id/textViewmodel3"
+        android:layout_alignEnd="@+id/spinnermodel2"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Model 4"
+        android:id="@+id/textViewmodel4"
+        android:layout_below="@+id/textViewmodel3"
+        android:layout_alignParentStart="false" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnermodel4"
+        android:layout_alignBottom="@+id/textViewmodel4"
+        android:layout_alignEnd="@+id/spinnermodel3"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Doba letu"
+        android:id="@+id/textViewmodel5"
+        android:layout_below="@+id/textViewmodel4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ulož"
+        android:id="@+id/calendarsave"
+        android:onClick="SaveCalendar"
+        android:layout_below="@+id/textViewmodel5"
+        android:layout_toEndOf="@+id/getID_calendar" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextTime"
+        android:layout_above="@+id/calendarsave"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerhour"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        android:layout_below="@+id/spinnermodel4"
+        android:layout_alignStart="@+id/spinnermodel4" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Nezadano"
+                android:id="@+id/textViewModel1"
+                android:layout_below="@+id/editTextTemp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Nezadano"
+                android:id="@+id/textViewModel2"
+                android:textAlignment="center"
+                android:layout_below="@+id/spinnermodel1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Nezadano"
+                android:id="@+id/textViewModel3"
+                android:textAlignment="center"
+                android:layout_alignTop="@+id/spinnermodel3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Nezadano"
+                android:id="@+id/textViewModel4"
+                android:textAlignment="center"
+                android:layout_below="@+id/spinnermodel3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Místo"
+                android:id="@+id/textViewPlace"
+                android:layout_below="@+id/textViewHour"
+                android:layout_alignEnd="@+id/textViewHour" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextPlace"
+                android:layout_below="@+id/editTextHour"
+                android:layout_alignParentEnd="true"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Datum"
+                android:id="@+id/textViewDate2"
+                android:layout_above="@+id/editTextHour"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDate"
+                android:layout_above="@+id/editTextHour"
+                android:layout_alignStart="@+id/editTextHour"
+                android:inputType="text" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/buttonCalendarDel"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textViewDate2"
+                android:onClick="SaveCalendar"
+                android:background="@android:drawable/ic_delete" />
+
+            <Spinner
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerPlace"
+                android:layout_alignBottom="@+id/editTextPlace"
+                android:layout_alignStart="@+id/editTextHour"
+                android:spinnerMode="dropdown" />
+
+
+        </RelativeLayout>
+    </ScrollView>

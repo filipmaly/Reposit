@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu"
+            android:checked="true"
+            android:title="@string/drawer_menu"
+            android:onClick="drawerClick"/>
+
+        <item
+            android:id="@+id/Kalendar"
+            android:title="@string/Kalendar"
+            android:onClick="drawerClick"/>
+        <item
+            android:id="@+id/Baterie"
+            android:title="@string/Baterie"
+            android:onClick="drawerClick"/>
+        <item
+            android:id="@+id/Modely"
+            android:title="@string/Modely"
+        android:onClick="drawerClick"/>
+
+        <item
+            android:id="@+id/Autori"
+            android:title="@string/Autori"
+            android:onClick="drawerClick"/>
+
+
+
+
+
+
+    </group>
+</menu>

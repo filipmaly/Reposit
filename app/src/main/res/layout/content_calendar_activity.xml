@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_calendar_activity"
+    tools:context="filipmaly.flightnotes.calendar_activity"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Přidej záznam"
+        android:id="@+id/addcalendardate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="adddate" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leden"
+                android:id="@+id/button1"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Únor"
+                android:id="@+id/button2"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Březen"
+                android:id="@+id/button3"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duben"
+                android:id="@+id/button4"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Květen"
+                android:id="@+id/button5"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Červen"
+                android:id="@+id/button6"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Červenec"
+                android:id="@+id/button7"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Srpen"
+                android:id="@+id/button8"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Září"
+                android:id="@+id/button9"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Říjen"
+                android:id="@+id/button10"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listopad"
+                android:id="@+id/button11"
+                android:onClick="ChangeMonth" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prosinec"
+                android:id="@+id/button12"
+                android:onClick="ChangeMonth" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewCalendar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp" />
+
+
+</RelativeLayout>

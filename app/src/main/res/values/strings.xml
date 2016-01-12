@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Flight notes</string>
+    <string name="title_activity_activity_date">ActivityDate</string>
+    <string name="title_activity_prehled">prehled</string>
+
+
+    <string-array name="minuteItem">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>1:10</item>
+        <item>1:15</item>
+        <item>1:20</item>
+        <item>1:25</item>
+        <item>1:30</item>
+        <item>1:35</item>
+        <item>1:40</item>
+        <item>1:45</item>
+        <item>1:50</item>
+        <item>1:55</item>
+        <item>2:00</item>
+
+    </string-array>
+    <string-array name="City">
+        <item>Nezadano</item>
+    <item>Praha</item>
+    <item>Tabor</item>
+    <item>Trutnov</item>
+    <item>Otrokovice</item>
+    <item>Hodonin</item>
+    <item>Pisek</item>
+    <item>Plzen</item>
+    </string-array>
+
+
+
+
+
+    <string name="drawer_menu">Menu</string>
+    <string name="Kalendar">Kalendar</string>
+    <string name="Baterie">Baterie</string>
+    <string name="Modely">Modely</string>
+    <string name="Autori">Autoři</string>
+
+
+    <string name="action_settings">O programu</string>
+    <string name="title_activity_get_vallue_button">get_vallue_button</string>
+    <string name="HeaderGetValue">Poslední log</string>
+    <string name="NameGet">Jmeno</string>
+    <string name="CountOfLipo">Počet článků</string>
+    <string name="ID_Battery">ID batterie</string>
+    <string name="Last_Request_Bat">Poslední záznam</string>
+    <string name="CountOfCycle">Počet cyklů</string>
+    <string name="Weather">Počasí</string>
+    <string name="Savebutt">Ulozit</string>
+    <string name="title_activity_list_view">Flight notes</string>
+    <string name="title_activity_listview__item">Flight notes</string>
+    <string name="title_activity_calendar_activity">Flight notes</string>
+    <string name="title_activity_get_calendar_data">Flight notes</string>
+    <string name="title_activity_list_view_model">Flight notes</string>
+    <string name="title_activity_list_view_model_item">Flight notes</string>
+    <string name="title_activity_add_model">Flight notes</string>
+    <string name="title_activity_spinner_mode">Flight notes</string>
+    <string name="title_activity_about">Flight notes</string>
+    <string name="title_activity_list_wiev__calendar__item">ListWiev_Calendar_Item</string>
+
+
+</resources>
