@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\pre-dexed\release\classes-f1929caf7ecd550eb3390c24b91e3e1a104516fa.jar" />
+    </item>
+    <item
+        jar="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\pre-dexed\release\classes-feda36902888188e311f5b0ca16e39a0dc3e3188.jar" />
+    </item>
+    <item
+        jar="D:\Users\filipmaly\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-0f41d0b3a2c54c59bf6db4c0bbebe1568ec81312.jar" />
+    </item>
+    <item
+        jar="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\pre-dexed\release\classes-2e69e7d89620ebf43689c7d45af57bbe89fc70ed.jar" />
+    </item>
+    <item
+        jar="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\Users\filipmaly\AndroidStudioProjects\FlightNotes\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-c4adb3a9110d08cf556369550e721ca74267efc2.jar" />
+    </item>
+
+</items>
